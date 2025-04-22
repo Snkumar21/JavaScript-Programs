@@ -1,3 +1,5 @@
+// Example of reading the values from the database using node.js
+
 var mysql = require('mysql2');
 
 var con = mysql.createConnection({
