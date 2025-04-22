@@ -1,4 +1,5 @@
-//create_table.js
+// Example of Creating table in the database using node.js and mysql workbench...
+
 var mysql = require('mysql2');
 var con = mysql.createConnection({
     host: "localhost",
