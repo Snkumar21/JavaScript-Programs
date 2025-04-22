@@ -1,4 +1,5 @@
-//create_db.js
+// Example of Creating DataBase using node.js and mysql workbench...
+
 var mysql = require('mysql2');
 var con = mysql.createConnection({
     host: "localhost",
