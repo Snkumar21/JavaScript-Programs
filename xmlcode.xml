@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style.xsl" type="text/xsl"?>
+
+<students>
+    <student>
+        <name>Nitish Singh</name>
+        <age>22</age>
+        <course>JavaScript</course>
+    </student>
+    <student>
+        <name>Tejaswini Misal</name>
+        <age>21</age>
+        <course>JavaScript</course>
+    </student>
+</students>

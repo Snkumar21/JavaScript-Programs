@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Details</title>
+</head>
+<body>
+    <h1>Family Information</h1>
+    <button onclick="getFamilyDetails()">Enter Family Details</button>
+    <div id="result"></div>
+
+    <script>
+        // Function to get family details from the user
+        function getFamilyDetails() {
+            // Get the number of family members from the user
+            const familySize = prompt("How many members are in your family?");
+            const family = [];
+
+            // Loop to get each member's details
+            for (let i = 0; i < familySize; i++) {
+                const firstName = prompt(`Enter the first name of family member ${i + 1}:`);
+                const lastName = prompt(`Enter the last name of family member ${i + 1}:`);
+                const age = parseInt(prompt(`Enter the age of ${firstName} ${lastName}:`));
+
+                // Create and store a family member object
+                family.push({ firstName, lastName, age });
+            }
+
+            // Calculate the number of adults (age 18 and above)
+            const adults = family.filter(member => member.age >= 18).length;
+
+            // Show the number of adults in an alert box
+            alert(`There are ${adults} adults in your family.`);
+
+            // Display the details of the family in the result div
+            let familyDetails = "<h2>Family Members:</h2>";
+            family.forEach(member => {
+                familyDetails += `<p>${member.firstName} ${member.lastName}, Age: ${member.age}</p>`;
+            });
+            document.getElementById("result").innerHTML = familyDetails;
+        }
+    </script>
+</body>
+</html>

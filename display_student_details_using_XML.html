@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display XML with JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #output {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Information</h2>
+    <button onclick="loadXML()">Load XML</button>
+    <div id="output"></div>
+
+    <script>
+        function loadXML() {
+            // Define the XML data
+            let xmlData = `
+                <students>
+                    <student>
+                        <name>Nitish Singh</name>
+                        <age>22</age>
+                        <course>JavaScript</course>
+                    </student>
+                </students>`;
+
+            // Parse XML
+            let parser = new DOMParser();
+            let xmlDoc = parser.parseFromString(xmlData, "text/xml");
+
+            // Get all students
+            let students = xmlDoc.getElementsByTagName("student");
+            let output = "<h3>Student List</h3>";
+
+            for (let i = 0; i < students.length; i++) {
+                let name = students[i].getElementsByTagName("name")[0].textContent;
+                let age = students[i].getElementsByTagName("age")[0].textContent;
+                let course = students[i].getElementsByTagName("course")[0].textContent;
+
+                output += `<p><strong>Name:</strong> ${name} <br>
+                            <strong>Age:</strong> ${age} <br>
+                            <strong>Course:</strong> ${course}</p>`;
+            }
+
+            document.getElementById("output").innerHTML = output;
+        }
+    </script>
+
+</body>
+</html>

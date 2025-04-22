@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style.xsl" type="text/xsl"?>
+
+<Bookstore>
+    <book category = "cooking">
+        <Title lang="en">Everyday Italian</Title>
+        <Author>Giada De Laurentiis</Author>
+        <Year>2005</Year>
+        <Price>30.00</Price>
+    </book>
+    
+    <book category = "children">
+        <Title lang="en">Harry Potter</Title>
+        <Author>J K. Rowling</Author>
+        <Year>2005</Year>
+        <Price>29.99</Price>
+    </book>
+
+    <book category = "web">
+        <Title lang="en">XQuery Kick Start</Title>
+        <Author>James McGovern</Author>
+        <Author>Per Bothner</Author>
+        <Author>Kurt Cagle</Author>
+        <Author>James Linn</Author>
+        <Year>2003</Year>
+        <Price>40.00</Price>
+    </book>
+
+</Bookstore>

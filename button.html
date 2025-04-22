@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <p id="para"></p>
+    <p id="para1"></p>
+
+    <script>
+        function fun() {
+            alert("Welcome to the javaTpoint.com");
+        }
+
+        function fun1() {
+            document.getElementById("para").innerHTML = "This is second function";
+        }
+
+        function fun2() {
+            document.getElementById("para1").innerHTML = "This is third function";
+        }
+
+        var mybtn = document.getElementById("btn");
+        mybtn.addEventListener("click",fun);
+        mybtn.addEventListener("click",fun1);
+        mybtn.addEventListener("click",fun2);
+    </script>
+</body>
+</html>

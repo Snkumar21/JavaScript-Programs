@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-Else Example</title>
+</head>
+<body>
+    <h2>Check Even or Odd</h2>
+    <p>Enter a number below and click the "Check" button to find out if it's even or odd.</p>
+
+    <!-- Input field and button -->
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="checkEvenOrOdd()">Check</button>
+
+    <p id="output"></p> <!-- Area to display the result -->
+
+    <script>
+        function checkEvenOrOdd() {
+            // Get the input value
+            const num = parseInt(document.getElementById("numberInput").value);
+
+            // Check if the number is even or odd using if-else
+            if (num % 2 === 0) {
+                document.getElementById("output").innerText = "Even";
+            } else {
+                document.getElementById("output").innerText = "Odd";
+            }
+        }
+    </script>
+</body>
+</html>

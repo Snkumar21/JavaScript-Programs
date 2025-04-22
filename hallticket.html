@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall Ticket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .flex{
+            display: flex;
+            padding: 20px;
+        }
+        .hall-ticket {
+            border: 2px solid black;
+            padding: 20px;
+            display: none;
+            margin-top: 20px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .student-photo {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #333;
+            border-radius: 100%;
+            display: block;
+            margin: 10px auto;
+            object-fit: cover;
+        }
+        h2 {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Hall Ticket Generator</h2>
+    <button id="btn">Generate Hall Ticket</button>
+
+    <div id="ticket" class="hall-ticket">
+        <h1>Ajeenkya DY Patil University</h1>
+        <h3>Hall Ticket</h3>
+        <div class="flex">
+            <img id="photo" class="student-photo" src="" alt="Student Photo">
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>URN Number:</strong> <span id="roll"></span></p>
+            <p><strong>Program:</strong> <span id="program"></span></p>
+            <p><strong>Exam Center:</strong> <span id="center"></span></p>
+            <p><strong>Course:</strong> <span id="course"></span></p>
+            <p><strong>Exam Date:</strong> <span id="exam-date"></span></p>
+        </div>
+    </div>
+
+    <script>
+        function showHallTicket() {
+            document.getElementById("name").innerHTML = "Singh Nitish Ku Ajit Kumar";
+            document.getElementById("roll").innerHTML = "2024-M-30092002A";
+            document.getElementById("program").innerHTML = "MCA";
+            document.getElementById("course").innerHTML = "B.Sc Computer Science";
+            document.getElementById("exam-date").innerHTML = "25th March 2025";
+            document.getElementById("center").innerHTML = "ADYPU, School of Engineering";
+            
+            document.getElementById("photo").src = "./img/Jpg.jpg";
+            
+            document.getElementById("ticket").style.display = "block";
+        }
+
+        document.getElementById("btn").addEventListener("click", showHallTicket);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+</head>
+<body>
+    <h1>Welcome to JavaScript!</h1>
+    <p id="message">Click the button to see magic!</p>
+    
+    <!-- Button -->
+    <button onclick="changeMessage()">Click Me</button>
+
+    <!-- JavaScript Section -->
+    <script>
+        function changeMessage() {
+            // Access the paragraph by its ID and change its text
+            document.getElementById("message").innerHTML = "Hello, you just used JavaScript!";
+        }
+    </script>
+</body>
+</html>

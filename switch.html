@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case Example</title>
+</head>
+<body>
+    <h2>Switch Case Example</h2>
+
+    <!-- Dropdown for user selection -->
+    <label for="marks">Choose your marks range :</label>
+    <select id="marks">
+        <option value="0">Select</option>
+        <option value="1">90-80</option>
+        <option value="2">80-70</option>
+        <option value="3">70-60</option>
+        <option value="4">60-40</option>
+        <option value="5">below 40</option>
+    </select>
+
+    <button onclick="showDayMessage()">Submit</button>
+
+    <p id="output"></p> <!-- Area to display the result -->
+
+    <script>
+        function showDayMessage() {
+            // Get the selected value
+            const day = document.getElementById("marks").value;
+            let message;
+
+            // Switch case to handle different days
+            switch (day) {
+                case "1":
+                    message = "A";
+                    break;
+                case "2":
+                    message = "B";
+                    break;
+                case "3":
+                    message = "C";
+                    break;
+                case "4":
+                    message = "D";
+                    break;
+                case "5":
+                    message = "FAIL";
+                    break;
+                default:
+                    message = "Invalid day selected.";
+            }
+
+            // Display the result
+            document.getElementById("output").innerText = message;
+        }
+    </script>
+</body>
+</html>

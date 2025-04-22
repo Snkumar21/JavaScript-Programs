@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="file.xsl" type="text/xsl"?>
+<students>
+    <student>
+        <id>2024-M-30092002A</id>
+        <name>Singh Nitish Ku Ajit Kumar</name>
+        <age>22</age>
+        <course>MCA</course>
+        <email>snkumar6926@gmail.com</email>
+    </student>
+    
+    <br />
+
+    <student>
+        <id>2024-M-19102002B</id>
+        <name>Aastha Dhangar</name>
+        <age>22</age>
+        <course>MCA</course>
+        <email>aasthadhangar2002@gmail.com</email>
+    </student>
+    
+    <br />
+
+    <student>
+        <id>2024-M-22112003</id>
+        <name>Tejaswini Misal</name>
+        <age>21</age>
+        <course>MCA</course>
+        <email>misaltejaswini04@gmail.com</email>
+    </student>
+
+    <br />
+
+    <student>
+        <id>2024-M-22052003</id>
+        <name>Arshiyan Shaikh</name>
+        <age>21</age>
+        <course>MCA</course>
+        <email>arshiyanshaikh22@gmail.com</email>
+    </student>
+
+    <br />
+
+    <student>
+        <id>2024-M-14122003</id>
+        <name>Aditee Pathak</name>
+        <age>21</age>
+        <course>MCA</course>
+        <email>aditeepathak14@gmail.com</email>
+    </student>
+</students>
