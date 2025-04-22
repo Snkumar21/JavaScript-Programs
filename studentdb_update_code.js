@@ -1,3 +1,5 @@
+// Example of updating the values in database using node.js
+
 var mysql = require('mysql2');
 
 var con = mysql.createConnection({
